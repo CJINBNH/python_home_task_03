@@ -3,3 +3,9 @@
 # *Пример:*
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
+
+list = [5, 7, 7, 2, 1, 4]
+result = []
+for i in range((len(list)+1)//2):
+    result.append(list[i]*list[len(list)-1-i])
+print(result)
